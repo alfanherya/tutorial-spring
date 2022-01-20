@@ -1,5 +1,6 @@
 package herya.programmer.belajarspringdasar;
 
+import herya.programmer.belajarspringdasar.data.Foo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
@@ -16,6 +17,6 @@ public class DepandsOnTest {
 
     @Test
     void testDependsOn(){
-
+        Foo foo = applicationContext.getBean(Foo.class);
     }
 }
